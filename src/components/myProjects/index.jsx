@@ -11,10 +11,12 @@ export const MyProjects = () => {
         {projects.map((elem) => {
           return (
             <CardProjects
+              key={elem.index}
               img={elem.img}
               title={elem.title}
               type={elem.type}
-              link={elem.links[1].github}
+              description={elem.description}
+              link={elem.links}
             />
           );
         })}
