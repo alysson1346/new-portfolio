@@ -17,7 +17,7 @@ export const Li = styled.li`
 `;
 export const Image = styled.img`
   width: 100%;
-  min-height: 190px;
+  min-height: 150px;
 `;
 export const Title = styled.p`
   margin: 0px;

@@ -1,9 +1,11 @@
 import { ButtonComponent } from "./style";
 
-export const Button = ({ children, color }) => {
+export const Button = ({ onClick, children, color }) => {
   return (
     <>
-      <ButtonComponent color={color}>{children}</ButtonComponent>
+      <ButtonComponent onClick={onClick} color={color}>
+        {children}
+      </ButtonComponent>
     </>
   );
 };
