@@ -15,45 +15,51 @@ export const Sidebar = ({ open, onClose }) => {
         <DivCloseSidebar>
           <button onClick={onClose}>X</button>
         </DivCloseSidebar>
+
         <Li>
-          <button
-            onClick={() => {
-              window.location.hash = "#Home";
-              onClose();
-            }}
-          >
-            <FaHome /> Home
-          </button>
+          <a href="#Home">
+            <button
+              onClick={() => {
+                onClose();
+              }}
+            >
+              <FaHome /> Home
+            </button>
+          </a>
+        </Li>
+
+        <Li>
+          <a href="#AboutMe">
+            <button
+              onClick={() => {
+                onClose();
+              }}
+            >
+              <FaUserCircle /> Sobre Mim
+            </button>
+          </a>
         </Li>
         <Li>
-          <button
-            onClick={() => {
-              window.location.hash = "#AboutMe";
-              onClose();
-            }}
-          >
-            <FaUserCircle /> Sobre Mim
-          </button>
+          <a href="#MySkills">
+            <button
+              onClick={() => {
+                onClose();
+              }}
+            >
+              <FaCode /> Habilidades
+            </button>
+          </a>
         </Li>
         <Li>
-          <button
-            onClick={() => {
-              window.location.hash = "#MySkills";
-              onClose();
-            }}
-          >
-            <FaCode /> Habilidades
-          </button>
-        </Li>
-        <Li>
-          <button
-            onClick={() => {
-              window.location.hash = "#MyProjects";
-              onClose();
-            }}
-          >
-            <FaLaptopCode /> Projetos
-          </button>
+          <a href="#MyProjects">
+            <button
+              onClick={() => {
+                onClose();
+              }}
+            >
+              <FaLaptopCode /> Projetos
+            </button>
+          </a>
         </Li>
         <DivBtn>
           <Button

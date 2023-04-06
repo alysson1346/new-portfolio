@@ -33,6 +33,9 @@ export const Li = styled.li`
       cursor: pointer;
     }
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const DivCloseSidebar = styled.div`
