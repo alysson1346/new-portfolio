@@ -24,6 +24,7 @@ export const ModalBody = styled.div`
   p {
     line-height: 30px;
   }
+  overflow-y: scroll;
 `;
 
 export const DivCloseModal = styled.div`
