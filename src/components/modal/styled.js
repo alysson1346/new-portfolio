@@ -21,6 +21,9 @@ export const ModalBody = styled.div`
     flex-direction: row;
     gap: 10px;
   }
+  p {
+    line-height: 30px;
+  }
 `;
 
 export const DivCloseModal = styled.div`
@@ -29,6 +32,7 @@ export const DivCloseModal = styled.div`
   width: 100%;
   padding-bottom: 10px;
   border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 15px;
 
   button {
     background-color: red;
