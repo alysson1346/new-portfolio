@@ -1,10 +1,30 @@
-import { Div, Img, Ul, Link, DivLogo, Divlinks, DivBtn } from "./style";
+import {
+  Div,
+  Img,
+  Ul,
+  Link,
+  DivLogo,
+  Divlinks,
+  DivBtn,
+  DivSIdebar,
+} from "./style";
 import Logo from "../../assets/img/logo.svg";
 import { Button } from "../button";
+import { useState } from "react";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Sidebar } from "../sidebar";
 
 export const Header = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <Div>
+      <DivSIdebar>
+        <button onClick={() => setSidebarOpen(true)}>
+          <MenuIcon />
+        </button>
+        <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      </DivSIdebar>
       <DivLogo>
         <Img src={Logo} />
       </DivLogo>
@@ -27,13 +47,17 @@ export const Header = () => {
       </Divlinks>
 
       <DivBtn>
-        <a
-          href="https://api.whatsapp.com/send?phone=5519999281346"
-          target="_blank"
-          rel="noreferrer"
+        <Button
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1Oacv6SHePF-DQQMhL8OO7XUtuDpiTymB/view?usp=sharing",
+              "_blank"
+            );
+          }}
+          color="btn1"
         >
-          <Button color="btn1">Entrar em contato</Button>
-        </a>
+          Ver Currículo
+        </Button>
       </DivBtn>
     </Div>
   );
