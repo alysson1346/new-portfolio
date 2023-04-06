@@ -18,8 +18,8 @@ export const Sidebar = ({ open, onClose }) => {
         <Li>
           <button
             onClick={() => {
-              onClose();
               window.location.hash = "#Home";
+              onClose();
             }}
           >
             <FaHome /> Home
@@ -28,8 +28,8 @@ export const Sidebar = ({ open, onClose }) => {
         <Li>
           <button
             onClick={() => {
-              onClose();
               window.location.hash = "#AboutMe";
+              onClose();
             }}
           >
             <FaUserCircle /> Sobre Mim
@@ -38,8 +38,8 @@ export const Sidebar = ({ open, onClose }) => {
         <Li>
           <button
             onClick={() => {
-              onClose();
               window.location.hash = "#MySkills";
+              onClose();
             }}
           >
             <FaCode /> Habilidades
@@ -48,8 +48,8 @@ export const Sidebar = ({ open, onClose }) => {
         <Li>
           <button
             onClick={() => {
-              onClose();
               window.location.hash = "#MyProjects";
+              onClose();
             }}
           >
             <FaLaptopCode /> Projetos
