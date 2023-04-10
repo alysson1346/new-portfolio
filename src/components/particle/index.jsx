@@ -32,10 +32,10 @@ export const Bolha = ({ children }) => {
             color: { value: "#b0009f" },
             links: {
               color: "#d3d3d3",
-              distance: 150,
+              distance: 100,
               enable: true,
               opacity: 0.4,
-              width: 1,
+              width: 3,
             },
             move: {
               bounce: false,
@@ -46,10 +46,10 @@ export const Bolha = ({ children }) => {
               speed: 2,
               straight: false,
             },
-            number: { density: { enable: true, area: 300 }, value: 80 },
+            number: { density: { enable: true, area: 200 }, value: 100 },
             opacity: { value: 0.5 },
             shape: { type: "circle" },
-            size: { random: true, value: 5 },
+            size: { random: true, value: 8 },
           },
           detectRetina: true,
         }}

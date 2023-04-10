@@ -1,6 +1,5 @@
 import { Button } from "./style";
 import { Arrow } from "./style";
-//import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export const ButtonTop = () => {
   return (

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Li = styled.li`
   background-color: ${(props) => props.theme.colors.cardSkills};
   width: 30%;
-  border-radius: 20px;
   padding: 10px;
   padding-top: 20px;
   display: flex;

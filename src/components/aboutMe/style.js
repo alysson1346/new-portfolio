@@ -40,7 +40,7 @@ export const Text = styled.p`
   line-height: 2.5vw;
 
   @media (max-width: 700px) {
-    font-size: 2.5vw;
-    line-height: 4vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
   }
 `;

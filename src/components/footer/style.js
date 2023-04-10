@@ -21,9 +21,12 @@ export const Text = styled.p`
 export const Link = styled.a`
   color: ${(props) => props.theme.colors.white};
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 
   :hover {
     cursor: pointer;
-    font-weight: 600;
+    color: #cfcfcf;
   }
 `;
