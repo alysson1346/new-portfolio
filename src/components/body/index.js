@@ -8,5 +8,11 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
 }
 
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+}
   
 `;

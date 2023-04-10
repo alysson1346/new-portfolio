@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Titles = styled.h2`
   font-weight: 600px;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: ${(props) =>
     props.black === "true"
       ? props.theme.colors.black

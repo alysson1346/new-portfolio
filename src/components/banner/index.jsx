@@ -1,8 +1,7 @@
-import Alysson from "../../assets/img/Banner/alysson.svg";
+import Alysson from "../../assets/img/Banner/alysson.png";
 import {
+  Container,
   Div,
-  DivImage,
-  DivContent,
   Img,
   Section,
   TitleBanner,
@@ -10,15 +9,17 @@ import {
   DivBtn,
 } from "./style";
 
+import { Bolha } from "../particle";
 import { Button } from "../button";
 
 export const Banner = () => {
   return (
-    <Div id="Home">
-      <DivImage>
-        <Img src={Alysson} />
-      </DivImage>
-      <DivContent>
+    <Container>
+      <Div id="Home">
+        <Bolha>
+          <Img src={Alysson} />
+        </Bolha>
+
         <Section>
           <TitleBanner>Olá, sou Alysson Colombo</TitleBanner>
           <TextBanner>
@@ -34,7 +35,7 @@ export const Banner = () => {
             </a>
           </DivBtn>
         </Section>
-      </DivContent>
-    </Div>
+      </Div>
+    </Container>
   );
 };
