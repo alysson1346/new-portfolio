@@ -46,7 +46,7 @@ export const Bolha = ({ children }) => {
               speed: 2,
               straight: false,
             },
-            number: { density: { enable: true, area: 400 }, value: 80 },
+            number: { density: { enable: true, area: 300 }, value: 80 },
             opacity: { value: 0.5 },
             shape: { type: "circle" },
             size: { random: true, value: 5 },
