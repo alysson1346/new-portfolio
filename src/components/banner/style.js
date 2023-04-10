@@ -12,8 +12,7 @@ export const Div = styled.div`
   min-height: 500px;
   border-bottom: 0.1px solid #e0e0e0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -37,25 +36,16 @@ export const Section = styled.section`
 `;
 export const TitleBanner = styled.h1`
   margin-bottom: 0px;
+  font-size: 8vw;
+
   @media (min-width: 900px) {
     font-size: 2vw;
   }
-  @media (max-width: 700px) {
-    font-size: 5.5vw;
-  }
-  @media (max-width: 700px) {
-    font-size: 5.5vw;
-  }
 `;
 export const TextBanner = styled.p`
+  font-size: 5vw;
   @media (min-width: 900px) {
     font-size: 1.3vw;
-  }
-  @media (max-width: 700px) {
-    font-size: 3vw;
-  }
-  @media (max-width: 700px) {
-    font-size: 2.5vw;
   }
 `;
 
