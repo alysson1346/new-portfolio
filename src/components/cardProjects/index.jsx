@@ -28,7 +28,7 @@ export const CardProjects = ({ img, title, type, description, link }) => {
   };
 
   return (
-    <Li data-aos="fade-up" data-aos-duration="2000">
+    <Li data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
       <Image src={img} alt="Imagem do projeto" />
       <Title>{title}</Title>
       <p>Tipo: {type}</p>

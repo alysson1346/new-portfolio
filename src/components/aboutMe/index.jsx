@@ -10,7 +10,7 @@ export const AboutMe = () => {
     <Div id="AboutMe">
       <DivContent>
         <Title black="true">Sobre Mim</Title>
-        <Text data-aos="fade-up" data-aos-duration="3000">
+        <Text data-aos="fade-up" data-aos-once="true" data-aos-duration="3000">
           Desde criança me interesso pela tecnologia e o que ela pode nos
           oferecer. Eu passava horas pesquisando artigos e vídeos sobre
           celulares, videogames e a experiência que eles nos proporcionavam.
@@ -24,6 +24,7 @@ export const AboutMe = () => {
       </DivContent>
       <DivImage
         data-aos="fade-left"
+        data-aos-once="true"
         data-aos-duration="3000"
         data-aos-offset="200"
       >

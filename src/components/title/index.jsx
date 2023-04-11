@@ -6,7 +6,12 @@ AOS.init();
 export const Title = ({ children, black }) => {
   return (
     <>
-      <Titles data-aos="fade-right" data-aos-duration="1000" black={black}>
+      <Titles
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        black={black}
+      >
         {children}
       </Titles>
     </>

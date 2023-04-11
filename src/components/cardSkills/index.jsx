@@ -12,7 +12,7 @@ AOS.init();
 
 export const CardSkills = ({ img, title, percentage }) => {
   return (
-    <Li data-aos="fade-up" data-aos-duration="1500">
+    <Li data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
       <DivImage>
         <Image src={img} />
       </DivImage>

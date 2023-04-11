@@ -1,4 +1,4 @@
-import { skills } from "../../utils/index";
+import { skills } from "../../utils/skiils/index.js";
 import { Div, Ul } from "./style";
 import { CardSkills } from "../cardSkills";
 import { Title } from "../title";
