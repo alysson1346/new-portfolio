@@ -8,9 +8,11 @@ import {
   TextBanner,
   DivBtn,
 } from "./style";
-
 import { Bolha } from "../particle";
 import { Button } from "../button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export const Banner = () => {
   return (
@@ -20,7 +22,11 @@ export const Banner = () => {
           <Img src={Alysson} />
         </Bolha>
 
-        <Section>
+        <Section
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          data-aos-duration="500"
+        >
           <TitleBanner>Olá, sou Alysson Colombo</TitleBanner>
           <TextBanner>
             Seja bem-vindo ao meu portfólio aqui apresento minhas habilidades e

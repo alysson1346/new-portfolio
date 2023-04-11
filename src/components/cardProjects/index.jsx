@@ -2,6 +2,9 @@ import { Li, Image, Title } from "./style";
 import { Button } from "../button";
 import { MyModal } from "../modal";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ anchorPlacement: "top-bottom" });
 
 export const CardProjects = ({ img, title, type, description, link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,7 +28,7 @@ export const CardProjects = ({ img, title, type, description, link }) => {
   };
 
   return (
-    <Li>
+    <Li data-aos="fade-up" data-aos-duration="2000">
       <Image src={img} alt="Imagem do projeto" />
       <Title>{title}</Title>
       <p>Tipo: {type}</p>

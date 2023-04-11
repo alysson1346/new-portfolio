@@ -1,13 +1,16 @@
 import Computer from "../../assets/img/AboutMe/pc.svg";
 import { Div, Img, DivContent, DivImage, Text } from "./style";
 import { Title } from "../title";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export const AboutMe = () => {
   return (
     <Div id="AboutMe">
       <DivContent>
         <Title black="true">Sobre Mim</Title>
-        <Text>
+        <Text data-aos="fade-up" data-aos-duration="3000">
           Desde criança me interesso pela tecnologia e o que ela pode nos
           oferecer. Eu passava horas pesquisando artigos e vídeos sobre
           celulares, videogames e a experiência que eles nos proporcionavam.
@@ -19,7 +22,11 @@ export const AboutMe = () => {
           atender as necessidades do mercado!
         </Text>
       </DivContent>
-      <DivImage>
+      <DivImage
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        data-aos-offset="200"
+      >
         <Img src={Computer} />
       </DivImage>
     </Div>
