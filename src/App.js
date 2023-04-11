@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import { Banner } from "./components/banner";
 import { AboutMe } from "./components/aboutMe";
 import { MySkills } from "./components/mySkills";
+import { MyCertificates } from "./components/myCertificate";
 import { MyProjects } from "./components/myProjects";
 import { Footer } from "./components/footer";
 import { ButtonTop } from "./components/buttonTop";
@@ -17,6 +18,7 @@ const App = () => {
       <Banner />
       <AboutMe />
       <MySkills />
+      <MyCertificates />
       <MyProjects />
       <Footer />
       <ButtonTop />

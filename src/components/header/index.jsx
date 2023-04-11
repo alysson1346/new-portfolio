@@ -41,6 +41,9 @@ export const Header = () => {
             <Link href="#MySkills">Minhas Habilidades</Link>
           </li>
           <li>
+            <Link href="#Certificates">Certificados</Link>
+          </li>
+          <li>
             <Link href="#MyProjects"> Meus Projetos</Link>
           </li>
         </Ul>

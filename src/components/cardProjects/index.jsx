@@ -4,7 +4,7 @@ import { MyModal } from "../modal";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init({ anchorPlacement: "top-bottom" });
+AOS.init();
 
 export const CardProjects = ({ img, title, type, description, link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);

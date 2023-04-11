@@ -14,5 +14,12 @@ export const GlobalStyle = createGlobalStyle`
   position: fixed;
   z-index: -100;
 }
+.slick-prev:before{
+color: #999999;
+}
+.slick-next:before{
+  color: #999999;
+
+}
   
 `;

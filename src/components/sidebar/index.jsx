@@ -1,7 +1,13 @@
 import { Drawer } from "@material-ui/core";
 import { Ul, Li, DivCloseSidebar, DivBtn } from "./styles";
 import { Button } from "../button";
-import { FaHome, FaUserCircle, FaCode, FaLaptopCode } from "react-icons/fa";
+import {
+  FaHome,
+  FaUserCircle,
+  FaCode,
+  FaLaptopCode,
+  FaUserGraduate,
+} from "react-icons/fa";
 
 export const Sidebar = ({ open, onClose }) => {
   return (
@@ -50,6 +56,19 @@ export const Sidebar = ({ open, onClose }) => {
             </button>
           </a>
         </Li>
+
+        <Li>
+          <a href="#Certificates">
+            <button
+              onClick={() => {
+                onClose();
+              }}
+            >
+              <FaUserGraduate /> Certificados
+            </button>
+          </a>
+        </Li>
+
         <Li>
           <a href="#MyProjects">
             <button
